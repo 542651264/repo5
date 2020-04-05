@@ -36,7 +36,6 @@ public class ItemTask {
         //按照页面对手机的搜索结果进行遍历解析
         for (int i = 1; i < 10; i = i + 2) {
             String html = httpUtils.doGetHtml(url + i);
-            System.out.println(html);
 
             //解析页面，获取商品数据并存储
             this.parse(html);
@@ -58,7 +57,8 @@ public class ItemTask {
 
         for (Element spuEle : spuEles) {
             //获取spu
-            long spu = Long.parseLong(spuEle.attr("data-spu"));
+            long spu = Long.parseLong(spuEle.attr("data-sku"));
+            System.out.println(spu);
 
             //获取sku信息
             Elements skuEles = spuEle.select("li.ps-item");

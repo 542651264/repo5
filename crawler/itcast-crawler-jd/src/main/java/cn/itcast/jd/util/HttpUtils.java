@@ -44,8 +44,13 @@ public class HttpUtils {
         HttpGet httpGet = new HttpGet(url);
 
 
+        httpGet.addHeader("cookie","shshshfpa=3a82429a-4ff8-576e-a977-94c6b38047cd-1567523583; shshshfpb=paN8YRRLzlGV3Or3hwLuzOg%3D%3D; __jdu=1409480500; TrackID=1v_QV6PuUNOqi4lGUQLXzbwM3ot3QGl4eSVmI09EvTkvSINt9cfAIRt4taCNSMqeI5g5UGy8hy70Vg-QYT1e0NfmKTGyhCMCzTwFVKHlRFVA; pinId=8h_5UUhT7CvC-tCnPEI62w; qrsc=3; __jdv=122270672|baidu|-|organic|not set|1585548815522; areaId=19; ipLoc-djd=19-1607-3155-0; xtest=5328.cf6b6759; PCSYCityID=CN_440000_440300_440305; shshshfp=8d2385ed0edd959c7bcc8bc0cbbb08c9; 3AB9D23F7A4B3C9B=5BCYFCAV3CFW5DR6JRBMMLEJIZ2YCSSMYDD2YU3EIDQXMARMCO75VHW4QWTAVBMUTJU6JSZOTRVYBRJMYQX6P2YN4M; __jda=122270672.1409480500.1567523572.1585548816.1585979886.10; __jdc=122270672; rkv=V0900; __jdb=122270672.2.1409480500|10.1585979886; shshshsID=10bce6e2c41c18a9753a92790f840b8d_2_1585979897056");
+        httpGet.addHeader("accept","text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3");
+        httpGet.addHeader("user-agent","Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36");
+
         //设置请求信息
         httpGet.setConfig(this.getConfig());
+
 
         CloseableHttpResponse response = null;
 
@@ -92,6 +97,10 @@ public class HttpUtils {
 
         //创建httpGet请求对象，设置url地址
         HttpGet httpGet = new HttpGet(url);
+
+        httpGet.addHeader("cookie","shshshfpa=3a82429a-4ff8-576e-a977-94c6b38047cd-1567523583; shshshfpb=paN8YRRLzlGV3Or3hwLuzOg%3D%3D; __jdu=1409480500; TrackID=1v_QV6PuUNOqi4lGUQLXzbwM3ot3QGl4eSVmI09EvTkvSINt9cfAIRt4taCNSMqeI5g5UGy8hy70Vg-QYT1e0NfmKTGyhCMCzTwFVKHlRFVA; pinId=8h_5UUhT7CvC-tCnPEI62w; qrsc=3; __jdv=122270672|baidu|-|organic|not set|1585548815522; areaId=19; ipLoc-djd=19-1607-3155-0; xtest=5328.cf6b6759; PCSYCityID=CN_440000_440300_440305; shshshfp=8d2385ed0edd959c7bcc8bc0cbbb08c9; 3AB9D23F7A4B3C9B=5BCYFCAV3CFW5DR6JRBMMLEJIZ2YCSSMYDD2YU3EIDQXMARMCO75VHW4QWTAVBMUTJU6JSZOTRVYBRJMYQX6P2YN4M; __jda=122270672.1409480500.1567523572.1585548816.1585979886.10; __jdc=122270672; rkv=V0900; __jdb=122270672.2.1409480500|10.1585979886; shshshsID=10bce6e2c41c18a9753a92790f840b8d_2_1585979897056");
+        httpGet.addHeader("accept","text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3");
+        httpGet.addHeader("user-agent","Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36");
 
         //设置请求信息
         httpGet.setConfig(this.getConfig());
